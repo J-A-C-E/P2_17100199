@@ -1,0 +1,26 @@
+* {
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    font-family: sans-serif;
+    background: rgb(248, 184, 64);
+}
+
+h1 {
+    text-align: center;
+}
+
+.form--register{
+    width: 95%;
+    max-width: 500 px;
+    margin: auto;
+    background: white;
+    border-radius: 7px;    
+}
+
+.form__titulo
+{
+    background: white;
+}
