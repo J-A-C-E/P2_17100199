@@ -1,0 +1,120 @@
+# Variables en JavaScript
+Primero definamos el significado de una variable.
+
+**Variable**
+
+Es un elemento que se utiliza para almacenar y referencias a otros valores.
+
+En JavaScript no es necesario declarar el tipo de variable antes de usarla com en otros lenguajes de programación como C#, C++, etc.
+
+El tipo de variable será determinado automáticamente cuando el programa empieze a ser ejecutado, por lo cual podemos tener las misma variable con diferentes tipos.
+
+```javascript
+var foo = 42; //Es un número
+var foo = "bar"; //Es un String
+var foo = true; // Es un boleano
+```
+
+JavaScript posee 6 tipos de datos que son *primitives*, esto significa que es una dato que no es un objeto y no tiene métodos.
+
+**Tipos de Datos**
+
+* **Boolean:** Valor lógico, true or false
+* **Null:** Valor null (valor vacío)
+* **Undefined:** Sin asignar valor
+* **Number:** Tipo numérico
+* **String:** Representa datos textuales o cadenas de caracteres
+
+### **Reglas para nombrar las variables**
+Las variables deben de construirse con caracteres alfanuméricos, el caracter subrayado o guón bajo (_) y el caracter dólas ($), además de que no podemps usar caracteres raros como (+ -)
+
+**Ejemplos de variables admitidas**
+
+* Edad
+* paiseDeNacimiento
+* _nombre
+* $elemento
+* Otro$_Nombres
+
+### **Declaración de variables**
+
+**var**
+
+Javascript cuenta con la palabra "var" que utilizaremos cuando queramos declarar una o varias variables. Como es lógico, se utiliza esa palabra para definir la variable antes de utilizarla.
+
+```javascript
+var operando1
+var operando2
+```
+
+**También podemos asignarles valores**
+
+```javascript
+var operando1 = 100
+var operando2 = 50
+```
+
+**let**
+
+Esta manera de declarar las variables afecta a su ámbito, ya que son locales al bloque donde se están declarando.
+
+```javascript
+function () {
+    console.log(miVar);
+    if(true) {
+        let miVar = "Hola Mundo";
+    }
+    console.log(miVar);
+ }
+```
+La clave de let es que restringe su existencia al ámbito donde ha sido declarada (cualquier ámbito expresado con unas llaves). Por tanto, la salida de la consola sería en este caso: undefined
+
+
+
+**const**
+
+ No declara una variable sino una constante, que no puede variar su valor a lo largo de la ejecución de un programa.  Por ejemplo en un script para contabilidad sería una buena idea poner por ejemplo el IVA cuyo valor no se alterará en todo el programa ya que siempre debería ser el mismo. Otro ejemplo sería el valor "PI".
+
+ ```javascript
+ const MIVARIABLE = 1;
+ console.log(MIVARIABLE);
+```
+
+```javascript
+ const MIVARIABLE = 10;
+ console.log(MIVARIABLE);
+```
+
+El primero nos dará 1 que es su valor, pero el segundo nos dará un error y nos dirá que su valor sigue siendo 1. Obviamente, el lenguaje no nos permite modificar el valor de una constante.
+
+# Hosting
+
+Es un servicio en línea que te permite publicar un sitio o aplicación web en Internet. Cuando te registras en un servicio de hosting, básicamente alquilas un espacio en un servidor donde puedes almacenar todos los archivos y datos necesarios para que tu sitio web funcione correctamente.
+
+### **Tipos de Hosting**
+
+* Hosting Gratuito
+* Hosting Compartido
+* Servidor Dedicado
+* VPS
+* Cloud Hosting
+
+**Opciones de Hosting**
+
+***Hosting Gratuito***
+
+Suelen incluir las prestaciones más importantes: acceso vía FTP, correo electrónico y soporte para aplicaciones PHP. Para que el dominio sea también gratis, suelen ofrecer además gratis un subdominio del proveedor. **No usar el hosting gratuito para un proyecto serio**
+
+***Hosting Compartido***
+
+Como sugiere el nombre, en esta modalidad, varios clientes comparten una misma máquina. Entre ellos no se ven, cada uno tiene su espacio privado y exclusivo, pero la carga que generan sus webs en el servidor es compartida y por tanto la carga de unas webs puede afectar a otras.
+
+### **Sistema Operativo del Servidor**
+
+Muchos proveedores te permiten elegir entre **Linux y Windows**.
+
+Para la mayoría de los usuarios, **Linux** va a ser la mejor opción. Se considera como el mejor sistema operativo para servidores web y está muy probado.
+
+Si tienes intención de instalar aplicaciones web que usan PHP, Perl, Python, de utilizar bases de datos MySQL como WordPress o Joomla, Linux es la opción natural.
+
+La razón de elegir Windows será que quieras instalar aplicaciones basadas en tecnología Microsoft como ASP.NET y bases de datos SQL Server. En este caso, en un servidor Linux simplemente no se podrían ejecutar.
