@@ -1,0 +1,27 @@
+# Definición
+
+El evento "Bubbling" también llamado evento de burbujeo consiste en una forma de propagación de eventos de HTML.
+
+Con el burbujeo, el evento es capturado y manejado primero por el elemento más interno y luego se propaga a los elementos externos.
+
+ Funciona comparando cada elemento de la lista que va a ser ordenada con el siguiente, intercambiándolos de posición si están en el orden equivocado.
+
+![,](https://javascript.info/article/bubbling-and-capturing/eventflow.svg)
+
+## EJEMPLO
+
+```HTML
+<div>
+    <ul>
+        <li></li>
+    </ul>
+</div>            
+```
+
+En la estructura anterior, suponga que se produjo un evento de clic en el elemento li.
+
+En la captura del modelo, el evento será manejado por la div primero (haga clic en los controladores de eventos en la div) primero, luego en la ul, luego en el último elemento del elemento objetivo, li.
+
+En el modelo burbujeante, ocurrirá lo contrario: el evento será manejado primero por li, luego por ul, y finalmente por el elemento div.
+
+Podemos concluir que el Bubbling es un principio que cuando un evento ocurre primero lo ejecuta en la etiqueta en donde se encuentra, posteriormente va subiendo el evento uno por uno, es decir pasa a sus antecesores
