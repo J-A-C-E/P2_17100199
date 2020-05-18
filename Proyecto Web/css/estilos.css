@@ -170,6 +170,7 @@ header .texttos-header{
     transform: scale(1);
 }
 
+
 .cards {
     display: flex;
     justify-content: space-evenly;
@@ -203,4 +204,39 @@ header .texttos-header{
 .cards .card > .contenido-texto-card {
     font-weight: 300;
     padding-top: 5px;
+}
+
+
+footer{
+    background: #414141;
+    padding: 60px 0 30px 0;
+    margin: auto;
+    overflow: hidden;
+}
+
+.contenedor-footer{
+    display: flex;
+    width: 90%;
+    justify-content: space-evenly;
+    margin: auto;
+    padding-bottom: 50px;
+    border-bottom: 1px solid #ccc;
+}
+
+.content-foo h4{
+    color: #fff;
+    border-bottom: 3px solid #af20d3;
+    padding-bottom: 5px;
+    margin-bottom: 10px;
+}
+
+.content-foo{
+    color: #ccc;
+}
+
+.titulo-final{
+    text-align: center;
+    font-size: 24px;
+    margin: 20px 0 0 0;
+    color:  #9e9797;
 }
